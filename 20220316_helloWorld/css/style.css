@@ -1,36 +1,42 @@
 /* 포괄적인 것보다 구체적인 것을 더 중요시 함 */
 /* 같은 급끼리는 순서를 중요시 함 */
 /* 값 뒤에 !important를 붙이면 가장 중요시 함 */
-body{ /* 선택자(selector) */
-    color: gray; /* 속성 : 값(property : value) */
+body { /* 선택자(selector) */
+  color: gray; /* 속성 : 값(property : value) */
+  /* background-color: greenyellow; */
 }
-body > ul > li{
-    color: green;
+body > ul > li {
+  color: green;
 }
-body > li, h6{
-    color: teal;
+body li,
+h6 {
+  color: teal;
 }
-#leader{
-    color: gold;
+#leader {
+  color: gold;
 }
-.korea{
-    color: crimson !important;
+.korea {
+  color: crimson !important;
 }
-.incheon{
-    color: darkblue;
+.incheon {
+  color: darkblue;
 }
-h1 + h2{
-    background-color: skyblue;
+h1 + h2 {
+  background-color: skyblue;
 }
-h2 ~ h3{
-    background-color: aqua;
+h2 ~ h3 {
+  background-color: aqua;
 }
-body > ul > ul:nth-child(4) > li:nth-child(2){
-    /* nth-child(n) => n번째 자식 */
-    /* first-child => 첫째 자식 */
-    /* last-child => 막내 자식 */
-    text-decoration: underline;
+body > ul > ul:nth-child(4) > li:nth-child(2) {
+  /* nth-child(n) => n번째 자식 */
+  /* first-child => 첫째 자식 */
+  /* last-child => 막내 자식 */
+  text-decoration: underline;
 }
-[type = "password"]{ /* HTML 태그 속성 = "값" */
-    background-color:chocolate;
+[type="password"] {
+  /* HTML 태그 속성 = "값" */
+  background-color: chocolate;
+}
+body > ul > ul:nth-child(4) {
+  background-color: greenyellow;
 }
