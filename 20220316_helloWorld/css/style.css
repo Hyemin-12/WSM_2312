@@ -25,7 +25,10 @@ h1 + h2{
 h2 ~ h3{
     background-color: aqua;
 }
-li:nth-child(2){
+body > ul > ul:nth-child(4) > li:nth-child(2){
+    /* nth-child(n) => n번째 자식 */
+    /* first-child => 첫째 자식 */
+    /* last-child => 막내 자식 */
     text-decoration: underline;
 }
 [type = "password"]{ /* HTML 태그 속성 = "값" */
