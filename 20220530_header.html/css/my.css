@@ -1,0 +1,32 @@
+li {
+    background-color: lightgoldenrodyellow;
+}
+
+.nav-list{
+    justify-content: flex-end;
+    /* flex-wrap: wrap; */
+}
+
+.nav-list li{
+    flex-basis: 200px; /* 기본 크기 설정, 기본값: auto */
+    flex-shrink: 0; /* 0을 쓰면 줄이기 가능, 기본값: 1 */
+    flex-grow: 1; /* 1을 쓰면 늘이기 가능, 기본값: 0 */
+    flex: 0 1 auto; /* flex: grow, shrink, basis */
+    /* border : px, solid, color */
+}
+
+/* .nav-list li:nth-child(1){
+    flex-grow: 4;
+}
+
+.nav-list li:nth-child(2){
+    flex-grow: 1;
+}
+
+.nav-list li:nth-child(3){
+    flex-grow: 1;
+}
+
+.nav-list li:nth-child(4){
+    flex-grow: 1;
+} */
