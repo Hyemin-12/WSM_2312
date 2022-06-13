@@ -89,6 +89,7 @@ nav {
 }
 
 nav i {
+    font-size: 1.25rem; /* 아이콘 1.25배 */
     color: #fff;
 }
 
@@ -101,7 +102,38 @@ nav i {
     column-gap: 0.75rem; /* 12px */
 }
 
+.nav-link {
+    display: block; /* 한 줄 전체를 차지해서 링크 동작 */
+}
+
 /* breakpoints */
 /* 2K & 4K */
 
 /* mobile */
+@media screen and (max-width: 600px) { /* and 다음에 띄워 써야 함 */
+    .nav-toggle {
+        display: block; /* nav-toggle 보이게 */
+        position: absolute; /* nav-logo 가운데 정렬로 하기 위해 위치 바꿈 */
+        cursor: pointer; /* 마우스 커서 모양 변경 */
+    }
+
+    
+    .nav-logo {
+        margin: 0 auto; /* 가운데 정렬 */
+    }
+
+    .nav-list {
+        flex-direction: column;
+        position: absolute;
+        left: 0;
+        right: 0; /* = width: 100%; */
+        top: 44px; /* nav 높이 */
+        background-color: #2f2f2f;
+    }
+
+    .nav-item {
+        padding: 0.5rem 0;
+        border-bottom: 1px solid #fff;
+        text-align: center; /* 글자 가운데 정렬 */
+    }
+}
