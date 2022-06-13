@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap');
 
 /* Variables CSS */
-:root{
+:root {
     /* color */
     --first-color: hsl(160, 100%, 25%);
     --firsr-color-bright: hsl(160, 100%, 40%);
@@ -32,12 +32,12 @@
 }
 
 /* BASE */
-*{
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
-body{
+body {
     position: relative;
     font-family: var(var(--body-font));
     font-size: var(--normal-font-size);
@@ -46,25 +46,50 @@ body{
 }
 h1,
 h2,
-h3{
+h3 {
     font-weight: var(--font-bold);
     color: var(--title-color);
 }
-ul{
+ul {
     list-style: none;
 }
-a{
+a {
     text-decoration: none;
+    color: var(--title-color);
 }
-img{
+img {
     max-width: 100%; /* 이미지보다 창 크기가 작아져도 이미지를 완전히 유지하며 축소 */
     height: auto; /* 기본값*/
 }
 
 /* nav */
-.container{
-    margin-left: 1rem;
+.container {
+    margin-left: 1rem; /* = 16px */
     margin-right: 1rem;
+}
+
+header {
+    background-color: var(--first-color);
+}
+
+nav {
+    height: 44px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav i {
+    color: #fff;
+}
+
+.nav-link {
+    color: #fff;
+}
+
+.nav-list {
+    display: flex;
+    column-gap: 0.75rem; /* 12px */
 }
 
 /* breakpoints */
