@@ -79,6 +79,15 @@ nav {
     align-items: center;
 }
 
+.nav-toggle {
+    display: none;
+    /* visibility: hidden; 보이지 않지만, 자리는 차지함 */
+}
+
+.nav-toggle i {
+    color: #fff;
+}
+
 nav i {
     color: #fff;
 }
