@@ -129,6 +129,8 @@ nav i {
         background-color: #2f2f2f;
         height: 0; /* overflow: hidden과 함께 메뉴가 안 보이게 함 */
         overflow: hidden;
+
+        transition: 0.3s;
     }
 
     .nav-item {
