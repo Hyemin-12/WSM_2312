@@ -39,7 +39,7 @@
 }
 body {
     position: relative;
-    font-family: var(var(--body-font));
+    font-family: var(--body-font);
     font-size: var(--normal-font-size);
     background-color: var(--body-color);
     color: var(--text-color)
@@ -93,10 +93,6 @@ nav i {
     color: #fff;
 }
 
-.nav-link {
-    color: #fff;
-}
-
 .nav-list {
     display: flex;
     column-gap: 0.75rem; /* 12px */
@@ -106,6 +102,9 @@ nav i {
     display: block; /* 한 줄 전체를 차지해서 링크 동작 */
 }
 
+.nav-link {
+    color: #fff;
+}
 /* breakpoints */
 /* 2K & 4K */
 
@@ -117,7 +116,6 @@ nav i {
         cursor: pointer; /* 마우스 커서 모양 변경 */
     }
 
-    
     .nav-logo {
         margin: 0 auto; /* 가운데 정렬 */
     }
@@ -129,11 +127,17 @@ nav i {
         right: 0; /* = width: 100%; */
         top: 44px; /* nav 높이 */
         background-color: #2f2f2f;
+        height: 0; /* overflow: hidden과 함께 메뉴가 안 보이게 함 */
+        overflow: hidden;
     }
 
     .nav-item {
         padding: 0.5rem 0;
         border-bottom: 1px solid #fff;
         text-align: center; /* 글자 가운데 정렬 */
+    }
+
+    .show-menu {
+        height: 164px;
     }
 }
