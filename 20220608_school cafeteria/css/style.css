@@ -15,7 +15,8 @@
 
     /* font */
     --body-font: 'Noto Sans KR', sans-serif;
-    --biggest-font-size: 2.25rem; /* 36px */
+    --biggest-font-size: 2.25rem;
+    /* 36px */
     --h1-font-size: 2rem;
     --h2-font-size: 1.5rem;
     --h3-font-size: 1.25rem;
@@ -37,6 +38,7 @@
     margin: 0;
     padding: 0;
 }
+
 body {
     position: relative;
     font-family: var(--body-font);
@@ -44,27 +46,34 @@ body {
     background-color: var(--body-color);
     color: var(--text-color)
 }
+
 h1,
 h2,
 h3 {
     font-weight: var(--font-bold);
     color: var(--title-color);
 }
+
 ul {
     list-style: none;
 }
+
 a {
     text-decoration: none;
     color: var(--title-color);
 }
+
 img {
-    max-width: 100%; /* 이미지보다 창 크기가 작아져도 이미지를 완전히 유지하며 축소 */
-    height: auto; /* 기본값*/
+    max-width: 100%;
+    /* 이미지보다 창 크기가 작아져도 이미지를 완전히 유지하며 축소 */
+    height: auto;
+    /* 기본값*/
 }
 
 /* nav */
 .container {
-    margin-left: 1rem; /* = 16px */
+    margin-left: 1rem;
+    /* = 16px */
     margin-right: 1rem;
 }
 
@@ -89,27 +98,76 @@ nav {
 }
 
 nav i {
-    font-size: 1.25rem; /* 아이콘 1.25배 */
+    font-size: 1.25rem;
+    /* 아이콘 1.25배 */
     color: #fff;
 }
 
 .nav-list {
     display: flex;
-    column-gap: 0.75rem; /* 12px */
+    column-gap: 0.75rem;
+    /* 12px */
 }
 
 .nav-link {
-    display: block; /* 한 줄 전체를 차지해서 링크 동작 */
+    display: block;
+    /* 한 줄 전체를 차지해서 링크 동작 */
 }
 
 .nav-link {
     color: #fff;
 }
+
+/* HOME */
+main {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 60px;
+    row-gap: 40px;
+    margin: 44px 2rem;
+}
+
+.card {
+    background-color: #f3f3f3;
+    border-radius: 1rem;
+    /* flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 240px; */
+    flex: 1 0 240px; /* 기본 240px, 커지면 확장 */
+    max-width: 300px; /* 너무 넓지 않게 300px까지 확장 */
+}
+
+.card-image {
+    height: 0;
+    padding-bottom: 66.6666666666667%; /* 그림 비율 유지하며 확대/축소 : 160/240 */
+    background: url("../img/plate_edit.png") center center;
+    background-size: cover;
+    border-radius: 1rem 1rem 0 0;
+}
+
+.card-description {
+    margin: 1rem;
+}
+
+.card-title {
+    display: flex;
+    justify-content: center; /* 날짜|식 가운데 정렬 */
+    column-gap: 20px;
+}
+
+.card-menu {
+    margin-top: 1rem;
+    text-align: center; /* 메뉴 가운데 정렬 */
+}
+
 /* breakpoints */
 /* 2K & 4K */
 
 /* mobile */
-@media screen and (max-width: 600px) { /* and 다음에 띄워 써야 함 */
+@media screen and (max-width: 600px) {
+
+    /* and 다음에 띄워 써야 함 */
     .nav-toggle {
         display: block; /* nav-toggle 보이게 */
         position: absolute; /* nav-logo 가운데 정렬로 하기 위해 위치 바꿈 */
